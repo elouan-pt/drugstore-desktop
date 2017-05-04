@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dataArrivalReport" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fbf5b510-1497-4b38-842e-8f00c08857f7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="arrivalDate" class="java.lang.String"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="detail" class="java.lang.String"/>
+	<field name="proofOfPayment" class="java.lang.String"/>
+	<field name="type" class="java.lang.String"/>
+	<field name="quantity" class="java.lang.Integer"/>
+	<field name="batch" class="java.lang.String"/>
+	<field name="supplier" class="java.lang.String"/>
+	<field name="sanitaryRegister" class="java.lang.String"/>
+	<field name="expiryDate" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="48" y="18" width="730" height="43" uuid="dd4993c7-9593-4eaa-98d0-abee4d02e4bb"/>
+				<textElement>
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Datos de Ingresos de Medicamentos por Rango de Fecha]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="28" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="86" height="20" uuid="af4d44fa-cc99-4d92-9822-71920b5fc1fe"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[F. LLEGADA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="101" y="2" width="116" height="20" uuid="eb50f2b6-0d6a-459c-b741-1705316b76f5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DESCRIPCIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="217" y="2" width="79" height="20" uuid="eef25ba0-91e2-4a6b-91c5-36e201559736"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[FORMA F.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="296" y="2" width="86" height="20" uuid="97b7fdff-e58c-4e63-8b13-636fd500c94e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[COMPROBANTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="2" width="55" height="20" uuid="f3efb172-cf9e-4bcb-8714-805d897f0472"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[TIPO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="437" y="2" width="69" height="20" uuid="a82c84c1-e11f-4667-936b-91efe79f8a11"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CANTIDAD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="506" y="2" width="75" height="20" uuid="4cc4328a-2729-489e-98f5-5b7d8aeead08"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[LOTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="581" y="2" width="66" height="20" uuid="fddf21e5-c989-483c-9cfb-6ea242937c65"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROVEEDOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="647" y="2" width="78" height="20" uuid="e35b083a-8e06-45c9-947d-8ff1a34081c9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[  R. SANITARIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="725" y="2" width="77" height="20" uuid="4ceff07d-f654-4d89-9601-977a2238825b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[F. VENC.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="86" height="20" uuid="42366039-375b-46d2-9b80-d2dd0a17d645"/>
+				<textFieldExpression><![CDATA[$F{arrivalDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="101" y="0" width="116" height="20" uuid="812aa544-504c-4d55-bce1-1e61fdc3a492"/>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="217" y="0" width="79" height="20" uuid="b663156e-9685-4046-ad06-97511a80a68e"/>
+				<textFieldExpression><![CDATA[$F{detail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="296" y="0" width="86" height="20" uuid="074719be-b122-458f-8182-dce60a199d65"/>
+				<textFieldExpression><![CDATA[$F{proofOfPayment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="382" y="0" width="55" height="20" uuid="d1b13adf-ffbe-4ce1-925b-f2e4c9a700c8"/>
+				<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="437" y="0" width="69" height="20" uuid="e20f0426-d575-41bd-8e0f-c2e306523cdf"/>
+				<textFieldExpression><![CDATA[$F{quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="506" y="0" width="75" height="20" uuid="f3e84d7a-1416-4ed0-884a-9c3732359628"/>
+				<textFieldExpression><![CDATA[$F{batch}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="581" y="0" width="66" height="20" uuid="cfe6a3dc-f6db-4706-b7be-e90d43062507"/>
+				<textFieldExpression><![CDATA[$F{supplier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="648" y="0" width="77" height="20" uuid="f101bdda-588e-433b-be75-e77b25bd38da"/>
+				<textFieldExpression><![CDATA[$F{sanitaryRegister}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="725" y="0" width="77" height="20" uuid="d6780ecd-acb1-4027-80ae-a65efee97298"/>
+				<textFieldExpression><![CDATA[$F{expiryDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="32" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="688" y="12" width="114" height="20" uuid="ff222a86-f8d9-453d-8b7e-2e4527b611fc"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="topPanel" alignment="0" max="32767" attributes="0"/>
+          <Component id="topDownSeparator" max="32767" attributes="0"/>
+          <Component id="downPanel" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="topPanel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="topDownSeparator" min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="downPanel" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="topPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="productTableScrollPane" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="searchTextField" min="-2" pref="288" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="searchButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="searchTextField" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="searchButton" alignment="0" min="-2" pref="20" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="productTableScrollPane" min="-2" pref="272" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="searchTextField">
+          <Events>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="searchTextFieldKeyPressed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="searchButton">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/images/search.png"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="searchButtonMouseClicked"/>
+          </Events>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="productTableScrollPane">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="productTable">
+              <Properties>
+                <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="dtm" type="code"/>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
+                </Property>
+                <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                  <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="productTableMouseClicked"/>
+                <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="productTableMousePressed"/>
+                <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="productTableKeyReleased"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value=" dtm = new DefaultTableModel(&#xa;                new Object[][][][][][]{},&#xa;                new String[]{&#xa;                    &quot;Descripci&#xf3;n&quot;, &quot;Forma&quot;, &quot;Precio de Compra&quot;, &quot;Porcentaje de Ganancia&quot;, &quot;Precio de Venta&quot;, &quot;Stock&quot;&#xa;                }&#xa;        ) {&#xa;            boolean[] canEdit = new boolean[]{&#xa;                false, false, false, false, false, false&#xa;            };&#xa;&#xa;            @Override&#xa;            public boolean isCellEditable(int rowIndex, int columnIndex) {&#xa;                return canEdit[columnIndex];&#xa;            }&#xa;        };"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JSeparator" name="topDownSeparator">
+    </Component>
+    <Container class="javax.swing.JPanel" name="downPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                          <Component id="proofOfPaymentLabel" min="-2" max="-2" attributes="0"/>
+                          <Component id="descriptionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="formLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="unitPriceLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="quantityLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="batchLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="supplierLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="sanitaryRegisterLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="arrivalDateLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="expiryDateLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="descriptionTextField" min="-2" pref="393" max="-2" attributes="0"/>
+                              <Component id="quantityTextField" min="-2" pref="96" max="-2" attributes="0"/>
+                              <Component id="batchTextField" alignment="0" min="-2" pref="238" max="-2" attributes="0"/>
+                              <Component id="arrivalDateChooser" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="proofOfPaymentTextField" min="-2" pref="238" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="typeComboBox" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="supplierComboBox" alignment="0" min="-2" pref="177" max="-2" attributes="0"/>
+                              <Component id="sanitaryRegisterTextField" min="-2" pref="238" max="-2" attributes="0"/>
+                              <Component id="expiryDateChooser" min="-2" pref="131" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="formComboBox" min="-2" pref="96" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="moneySymbolLabel" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="unitPriceTextField" min="-2" pref="96" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="profitPercentageLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="profitPercentageTextField" min="-2" pref="78" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                          <Component id="percentageSymbolLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="salePriceLabel" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="moneySymbolLabel1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                          <Component id="salePriceTextField" min="-2" pref="148" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="-2" pref="264" max="-2" attributes="0"/>
+                  <Component id="jLayeredPane1" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="279" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="descriptionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="descriptionTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="formLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="formComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="unitPriceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="profitPercentageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="salePriceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="unitPriceTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="profitPercentageTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="salePriceTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="percentageSymbolLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="moneySymbolLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="moneySymbolLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="quantityLabel" min="-2" max="-2" attributes="0"/>
+                      <Component id="quantityTextField" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="batchLabel" min="-2" max="-2" attributes="0"/>
+                      <Component id="batchTextField" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="supplierLabel" min="-2" max="-2" attributes="0"/>
+                      <Component id="supplierComboBox" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="proofOfPaymentLabel" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="proofOfPaymentTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="typeComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="sanitaryRegisterLabel" min="-2" max="-2" attributes="0"/>
+                      <Component id="sanitaryRegisterTextField" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="arrivalDateLabel" min="-2" max="-2" attributes="0"/>
+                      <Component id="arrivalDateChooser" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="expiryDateLabel" min="-2" max="-2" attributes="0"/>
+                      <Component id="expiryDateChooser" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="jLayeredPane1" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="descriptionLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Descripci&#xf3;n:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="formLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Forma:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="unitPriceLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Precio Unitario:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="quantityLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cantidad:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="batchLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Lote:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="supplierLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Proveedor:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="proofOfPaymentLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="N&#xba; de Comprobante:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="sanitaryRegisterLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Registro Sanitario:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="arrivalDateLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Fecha de Llegada:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="profitPercentageLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Porcentaje de Ganancia:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="salePriceLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Precio de Venta:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="expiryDateLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Fecha de Vencimiento:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="descriptionTextField">
+          <Properties>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Cursor de Texto"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="formComboBox">
+          <Properties>
+            <Property name="editable" type="boolean" value="true"/>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="dcbmForm" type="code"/>
+            </Property>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Cursor Por defecto"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="formComboBox.getEditor().getEditorComponent().addKeyListener(new java.awt.event.KeyAdapter() {&#xa;&#xa;            @Override&#xa;            public void keyReleased(java.awt.event.KeyEvent evt) {&#xa;                formComboBoxKeyReleased(evt);&#xa;            }&#xa;        });&#xa;&#xa;jtcForm = (JTextComponent) formComboBox.getEditor().getEditorComponent();"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="dcbmForm = new DefaultComboBoxModel();"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JTextField" name="unitPriceTextField">
+          <Events>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="unitPriceTextFieldKeyReleased"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((AbstractDocument) unitPriceTextField.getDocument()).setDocumentFilter(&#xa;                new DoubleDocumentFilter());"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JTextField" name="quantityTextField">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((AbstractDocument) quantityTextField.getDocument()).setDocumentFilter(&#xa;                new IntegerDocumentFilter());"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JTextField" name="batchTextField">
+        </Component>
+        <Component class="javax.swing.JComboBox" name="supplierComboBox">
+          <Properties>
+            <Property name="editable" type="boolean" value="true"/>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="dcbmSupplier" type="code"/>
+            </Property>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Cursor Por defecto"/>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="supplierComboBox.getEditor().getEditorComponent().addKeyListener(new java.awt.event.KeyAdapter() {&#xa;&#xa;            @Override&#xa;            public void keyReleased(java.awt.event.KeyEvent evt) {&#xa;                supplierComboBoxKeyReleased(evt);&#xa;            }&#xa;        });&#xa;&#xa;jtcSupplier = (JTextComponent) supplierComboBox.getEditor().getEditorComponent();"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="dcbmSupplier = new DefaultComboBoxModel();"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JTextField" name="proofOfPaymentTextField">
+        </Component>
+        <Component class="javax.swing.JTextField" name="sanitaryRegisterTextField">
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="arrivalDateChooser">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="arrivalDateChooser.setDate(new java.util.Date());&#xd;&#xa;arrivalDateChooser.getDateEditor().setEnabled(false);"/>
+          </AuxValues>
+        </Component>
+        <Component class="com.toedter.calendar.JDateChooser" name="expiryDateChooser">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="expiryDateChooser.setDate(new java.util.Date());&#xd;&#xa;expiryDateChooser.getDateEditor().setEnabled(false);"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JTextField" name="profitPercentageTextField">
+          <Events>
+            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="profitPercentageTextFieldKeyReleased"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="((AbstractDocument) profitPercentageTextField.getDocument()).setDocumentFilter(&#xa;                new DoubleDocumentFilter());"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JTextField" name="salePriceTextField">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="percentageSymbolLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="%"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="moneySymbolLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="S/."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="moneySymbolLabel1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="S/."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="typeComboBox">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="3">
+                <StringItem index="0" value="BOLETA"/>
+                <StringItem index="1" value="FACTURA"/>
+                <StringItem index="2" value="OTRO"/>
+              </StringArray>
+            </Property>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JLayeredPane" name="jLayeredPane1">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="acceptButton" min="-2" pref="118" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                      <Component id="cancelButton" min="-2" pref="118" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="acceptButton" alignment="3" min="-2" pref="69" max="-2" attributes="0"/>
+                          <Component id="cancelButton" alignment="3" min="-2" pref="69" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="acceptButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Aceptar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="acceptButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="cancelButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cancelar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelButtonActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
